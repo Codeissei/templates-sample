@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>ホームページ</h1>
+    <p>以下のアプリケーションにアクセスできます：</p>
+    <ul>
+        <li><a href="{{ url_for('one_app.show_template') }}">アプリケーション１</a></li>
+        <li><a href="{{ url_for('two_app.show_template') }}">アプリケーション２</a></li>
+    </ul>
+{% endblock %}
